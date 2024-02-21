@@ -1,0 +1,50 @@
+site_name: HDS Modbus integration service
+site_dir: site
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  logo: hedengren.png
+
+  palette:
+    - scheme: default
+      primary: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - toc.integrate
+    - navigation.expand
+    - navigation.tabs
+    - navigation.instant
+
+plugins:
+  - offline
+  - search
+  - tags
+  - git-revision-date-localized
+  - enumerate-headings
+  - print-site:
+      add_to_navigation: false
+      print_page_title: "Printable Site"
+      include_css: false
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tilde
